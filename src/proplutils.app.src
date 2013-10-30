@@ -1,0 +1,9 @@
+%%-*- mode: erlang -*-
+{application, proplutils,
+ [
+  {description, "Some util functions for proplists"},
+  {vsn, git},
+  {registered, []},
+  {applications, []},
+  {env, []}
+ ]}.

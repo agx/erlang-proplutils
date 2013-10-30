@@ -1,0 +1,14 @@
+Some proplist helpers
+=====================
+
+Delete all properties named foo or bar:
+	
+        1> proplutils:delete([foo, bar], [{foo, "does"}, {bar, "not"}, {baz, "matter"}]).       
+        [{baz,"matter"}]
+
+Delete all properties that aren't named foo or bar:
+
+        1> proplutils:delete_except([foo, bar], [{foo, "does"}, {bar, "not"}, {baz, "matter"}]).
+        [{foo,"does"},{bar,"not"}]
+
+	
